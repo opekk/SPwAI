@@ -1,11 +1,6 @@
 const http = require('http')
-const fs = require('fs')
-const url = require('url')
-const qs = require('querystring')
 const port = 3000
 
-function zadanie1(){
-    
     function process_request(req, res){
     const body = 'Witaj na platformie Node!\n'
     const content_length = body.length
@@ -17,4 +12,4 @@ function zadanie1(){
     }
     const server = http.createServer(process_request)
     server.listen(port, () => console.log('Serwer działa'))
-}
+

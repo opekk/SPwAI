@@ -1,17 +1,22 @@
 const http = require('http')
 const fs = require('fs')
+const path = require('path')
 
 const port = 3000;
-    function serveStaticFile(res, path, contentType, responseCode = 200){
-        fs.readFile(__dirname + path, (err, data) => {
-            if(err){
-                res.writeHead(500, {'Content-Type': 'text/plain'})
-                return res.end('500 - Blad wewnetrzny')
-            }
-            res.writeHead(responseCode, {'Content-Type': contentType})
-            res.end(data)
-        })
-    }
+
+function serveStaticFile(res, filePath, contentType, responseCode = 200) {
+    const fullPath = path.join(__dirname, '..', filePath); // Cofamy się do głównego folderu projektu
+
+    fs.readFile(fullPath, (err, data) => {
+        if (err) {
+            console.error(`Błąd ładowania pliku ${fullPath}:`, err);
+            res.writeHead(500, { 'Content-Type': 'text/plain' });
+            return res.end('500 - Błąd wewnętrzny serwera');
+        }
+        res.writeHead(responseCode, { 'Content-Type': contentType });
+        res.end(data);
+    });
+}
 
     const server = http.createServer((req, res) => {
         switch(req.url){
