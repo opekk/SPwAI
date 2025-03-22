@@ -1,17 +1,24 @@
 # SPwAI
-
-
-- Lab0 - Laravel **-2/5**
-- Lab1 - Laravel **-5/5**
-- Lab2 - JavaScript **5/5**
-- Lab3 - Node.js **5/5**
+- Lab0 - Laravel 
+    - **-2/5**
+- Lab1 - Laravel 
+    - **-5/5**
+- Lab2 - JavaScript 
+    - **5/5**
+- Lab3 - Node.js 
+    - **5/5**
 - Lab4 - Express
+    - nieukończone
 - Lab5 - MongoDB
+    - zrobione, nieoddane 
 - Lab6 - React I
+    - nieukończone
 - Lab7 - React II
+    - nieukończone
 - Lab8 - Uwierzytelnianie
+    - nieukończone
 - Lab9 - Bezpieczeństwo
+    - nieukończone
 - Lab10 - Testowanie
-
-
-### Liczba punktów 3/100
+    - nieukończone
+## Liczba punktów **3/100**
