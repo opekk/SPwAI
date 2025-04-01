@@ -1,4 +1,1 @@
-DO ZROBIENIA
-
-4.14 - ????
-4.16 -
+**WSZYSTKO ZROBIONE**
