@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+<body>
+    <h2>Formularz rejestracyjny</h2>
+    <form action="/result2" method="GET">
+        <label for="name">Imię i nazwisko:</label>
+        <input type="text" name="name" required><br><br>
+
+        <p>Wybierz znane języki obce:</p>
+        <input type="checkbox" name="languages" value="angielski">
+        <label for="english">Angielski</label><br>
+
+        <input type="checkbox" name="languages" value="niemiecki">
+        <label for="german">Niemiecki</label><br>
+
+        <input type="checkbox" name="languages" value="hiszpański">
+        <label for="spanish">Hiszpański</label><br><br>
+
+        <button type="submit">Wyślij</button>
+    </form>
+</body>
+</html>
