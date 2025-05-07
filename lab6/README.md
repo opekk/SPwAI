@@ -1,0 +1,1 @@
+# do dokonczenia 6.3, 

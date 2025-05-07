@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const reactEngine = require('express-react-views')
 
+
 const app = express()
 
 app.set('view engine', 'jsx')
@@ -17,4 +18,4 @@ app.get('/about', (req, res) => {
     )
 })
 
-app.listen(3000, () => console.log(`Serwer dziala na porcie ${port}`))
+app.listen(3000, () => console.log(`Serwer dziala na porcie 3000`))

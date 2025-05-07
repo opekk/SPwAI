@@ -16,7 +16,7 @@ app.use(metoda)
 app.use('/', (req, res) => {
     res.send(`
         Metoda: ${req.method} </br>
-        Sciezka: " + ${req.protocol} + "://" + ${req.get('host')} + ${req.originalUrl}`)
+        Sciezka: ${req.protocol}://${req.get('host')}${req.originalUrl}`)
 })
 
 

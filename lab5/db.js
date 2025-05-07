@@ -4,6 +4,9 @@ const dotenv = require("dotenv")
 dotenv.config()
 const polaczenie = process.env.connection
 
+const local = "mongodb://localhost:27017/StudentDB"
+
+
 mongoose.connect(polaczenie, {useNewUrlParser: true})
     .then((result => {
         console.log("Polaczono z baza danych")
